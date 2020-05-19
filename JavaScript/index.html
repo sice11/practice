@@ -7,11 +7,14 @@
   <body>
     
     
-    <script src="sample.js"></script>
+    <script src="index.js"></script>
     <script>
-      const myName = "山田";
-      const myAge = "27";
-      console.log(myName,myAge);
+      const myObject = ["リンゴ","メロン","バナナ","イチゴ"];
+      const sliceAfter = myObject.slice(1,3);//(1,3)とすると、3番目のデータは含まれないので注意
+
+      const myData = [2020,05,20];
+      console.log(sliceAfter);
+      console.log(myData.join("-"));
     </script>
   
   </body>
