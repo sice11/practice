@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>JavaScript学習4章</title>
+    </head>
+    <body>
+        <script>
+            //4章条件分岐
+            const myNumber = 550;
+            if(myNumber < 50){
+                console.log("これはtrueです。")
+            } else {
+                console.log("これはfaleです。")
+            }
+
+            //
+
+            const myNumber1 = 500;
+            if(myNumber1 < 10){
+                console.log("10よりも小さい数")
+            } else if(myNumber1 < 20){
+                console.log("20よりも小さい数")
+            } else if(myNumber1 < 30){
+                console.log("30よりも小さい数")
+            } else {
+                console.log("30以上の数")
+            }
+
+            //【条件式 ? trueの処理 : falseの処理】
+
+            const myNumber2 = 30;
+            const result = myNumber2 < 50 ? "本物" : false;
+            console.log(result);
+
+            //switch文の使い方
+
+            const myString = "メロン";
+            switch(myString) {
+                case "メロン":
+                    console.log("500円になります。");
+                    break;
+                case "イチゴ":
+                    console.log("300円になります。");
+                    break;
+                case "バナナ":
+                    console.log("150円になります。");
+                    break;
+                default:
+                    console.log("価格は未定です。");
+            }
+
+            //
+
+        </script>
+    </body>
+</html>
