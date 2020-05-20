@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>JavaScriptの課題3.5</title>
+    </head>
+
+    <body>
+        <script>
+            const omikuziList = ["大吉","小吉","吉","凶"];
+            //const result = omikuziList.filter((element,index,array) => {
+                //return Math.random() * omikuziList
+            //})
+            //console.log(result);
+            //以下回答
+            const randomNumber = Math.floor(Math.random() * omikuziList.length);
+            console.log(omikuziList[randomNumber]);
+            //配列の番号をランダム抽出し、それをもとに、もともとの配列から結果を出している
+
+//【ヒント】
+
+//乱数を作るにはMath.random()を利用します。このメソッドに数値を掛け合わせると任意の範囲で乱数を作成できます。
+
+//例えば0〜9までの乱数を作りたい場合は次のように記述します。
+
+//Math.random() * 10;
+//数値10を掛け合わせると0〜9までの乱数が作れます。（10は含まれません）ただし、取得する数値は小数点になっているのでfloor()メソッドで切り捨てます。
+
+//Math.floor(Math.random() * 10);
+        </script>
+    </body>
+</html>
