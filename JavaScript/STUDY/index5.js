@@ -1,9 +1,9 @@
-//let state = true;
-//while(state){
-    //let random = Math.floor(Math.random()*10);
-    //if(random === 3) state = false;
-    //console.log(random);
-//}
+let state = true;
+while(state){
+    let random = Math.floor(Math.random()*10);
+    if(random === 3) state = false;
+    console.log(random);
+}
 
 //
 
@@ -12,9 +12,13 @@
     //if(i === 3 ) break;
 //}
 
-let state = true;
-while(state){
-    let random = Math.floor(Math.random()*10);
-    if(random === 3)break;
-    console.log(random);
+//let state = true;
+//while(state){
+    //let random = Math.floor(Math.random()*10);
+    //if(random === 3)break;
+    //console.log(random);
+//}
+
+for(let i = 0; i<10; i++){
+    console.log("test");
 }
