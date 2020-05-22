@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1問目
+        // let hellow = "Hellow World";
+        // alert(hellow);
+        // alertはページにすぐ出す
+
+        //2問目
+        // let lesson = "1";
+        // if(lesson == String(1) || lesson == 1){
+        //     alert("1です。");
+        // }else{
+        //     alert("それ以外です。");
+        // }
+        //String（文字列の意味）型と　「||」 以降が数値型との比較
+        //===は文字列と数値型が完全に一致していないと、イコールにならない（絶対比較）ので、
+        //==のほうが好ましい。（多言語との多様性が上がる）
+        //ほかの言語だと、==が絶対比較になる点も注意
+
+        // 3問目
+        // let count = 1;
+        // while(count <= 10){
+        //     alert(count);
+        //     count++
+        // }
+        
+        // 4問目
+        // for (let count = 1; count <= 10; count++){
+        //     alert(count);
+        // }
+
+        // 5問目
+        // for (let count = 1; count <= 10; count++){
+        //     if(count == String(1) || count == 1){
+        //         alert(count + "です。")
+        //     }else if (count == String(3) || count == 3){
+        //         alert(count + "です。")
+        //     }else{
+        //         alert("それ以外です。")
+        //     }
+        // }
+
+        // 6問目
+        function lesson(){
+            for (let count = 1; count <= 10; count++){
+                if(count == String(1) || count == 1){
+                    alert(count + "です。")
+                }else if (count == String(3) || count == 3){
+                    alert(count + "です。")
+                }else{
+                    alert("それ以外です。")
+                }
+            }
+        }
+        lesson();
+
+    </script>
+</body>
+</html>

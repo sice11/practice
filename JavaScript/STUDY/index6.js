@@ -11,7 +11,9 @@ function myFunc(){
     console.log("これは二番目の関数です。");
 }
 
-myFunc();
+console.log(myFunc);
+//console.logは実行した内容を出力した内容を表示する。
+//上の状態だと、関数の記述内容が表示される。
 
 //以下関数式
 const myFunc2 = function(){
