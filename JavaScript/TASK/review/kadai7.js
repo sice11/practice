@@ -15,8 +15,8 @@ let enemy = {
 
 
 let command = prompt(enemy.name + "が現れた！　【1】攻撃　【2】逃げる")
-if (command == String(1)||"1"){
+if (command == String(1)|| command == "1"){
     console.log(hero.name + "が" + enemy.name + "に" + hero.attack() +　"の攻撃");
-}else if(command == String(2)||"2"){
+}else if(command == String(2)||command == "2"){
     console.log(hero.name + "は逃げた。");
 }
