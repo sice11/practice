@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8章の課題の復習</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        class Cats extends Animal{
+            constructor(name,age,type){
+                super(name,age);
+                this.type = type;
+            }
+            speak(){
+                alert(this.name + "が「にゃーん！」と鳴きました！");
+            }
+        }
+        let cats = new Cats("シャム",3,"猫");
+        // console.log(cats);
+        cats.speak();
+
+    </script>
+</body>
+</html>
