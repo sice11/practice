@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9章　DOM操作の基本</title>
+</head>
+<body>
+    <!-- <h1>こんにちは</h1> -->
+    <ul>
+        <!-- <li id="text" class="sample">１つ目の項目</li>
+        <li class="sample">２つ目の項目</li> -->
+    </ul>    
+    <script>
+        // console.log(document.body);
+        // let text = document.getElementById("text");
+        // let sample = document.getElementsByClassName("sample");
+        // let li = document.querySelector("li");
+
+        // console.log(text);
+        // console.log(sample);
+        // console.log(li);
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "ゲーマーズ";
+        h1.innerHTML = '<a href = "https://www.gamers.co.jp/">ゲーマーズ</a>';
+        document.body.appendChild(h1);
+    </script>
+</body>
+</html>
