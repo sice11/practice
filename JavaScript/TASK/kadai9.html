@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <div>
+    <!-- <div>
         <label for = "name">名前</label>
         <br>
         <input type = "texi" id = "name" name = "name">
@@ -32,9 +32,50 @@
     <input type = "checkbox" name = "phone" value = "other">その他
 
     <br>
-    <button type = "button">実行</button>
+    <button type = "button">実行</button> -->
+
+    <!-- html分の回答 -->
+    <form name="myForm">
+        名前：<input type="text" name="name" />
+      
+        <br>
+        
+        メールアドレス：<input type="email" name="email" />
+      
+        <br>
+        
+        <input type="radio" name="age" value="20" />20代
+        <input type="radio" name="age" value="30" />30代
+        <input type="radio" name="age" value="40" />40代
+        <input type="radio" name="age" value="50" />50代
+      
+        <br>
+      
+        <p>普段使っているスマホは？</p>
+        <input type="checkbox" name="phone" value="iphone" />iPhone
+        <input type="checkbox" name="phone" value="android" />Android
+        <input type="checkbox" name="phone" value="flip-phone" />ガラケー
+        <input type="checkbox" name="phone" value="other" />その他
+      </form>
+      
+      <button id="btn">実行</button>    
 
     <script>
+        // JavaScriptの回答
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', () => {
+        const form = document.forms.myForm;
+
+        console.log(form.name.value); //名前の取得
+        console.log(form.email.value); //メールアドレスの取得
+        console.log(form.age.value);   //年齢の取得
+
+        //スマホ種類の取得
+        form.phone.forEach(item => {
+            if(item.checked) console.log(item.value);
+        })
+        });
     </script>
 </body>
 </html>
