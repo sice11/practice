@@ -7,10 +7,38 @@
 </head>
 <body>
     <!-- <h1>こんにちは</h1> -->
-    <ul>
+
+    <!-- <button id="btn">実行</button> -->
+
+    <!-- <ul> -->
         <!-- <li id="text" class="sample">１つ目の項目</li>
         <li class="sample">２つ目の項目</li> -->
-    </ul>    
+    <!-- </ul>     -->
+
+    <!-- <form name="myForm">
+
+        <input type="text" name="mytext" />
+    
+    </form>
+    
+    <button id="btn">実行</button> -->
+
+    <!-- <form name = "myForm">
+        <input type = "radio" name = "sample" value = "apple"/>リンゴ
+        <input type = "radio" name = "sample" value = "banana"/>バナナ
+        <input type = "radio" name = "sample" value = "melon"/>メロン
+    </form>
+    <button id="btn">実行</button> -->
+
+    <form name="myForm">
+        <input type="checkbox" name="test" value="one" />１
+        <input type="checkbox" name="test" value="two" />２
+        <input type="checkbox" name="test" value="three" />３
+    </form>
+
+    <button id="btn">実行</button>
+
+
     <script>
         // console.log(document.body);
         // let text = document.getElementById("text");
@@ -21,10 +49,33 @@
         // console.log(sample);
         // console.log(li);
 
-        const h1 = document.createElement("h1");
-        h1.textContent = "ゲーマーズ";
-        h1.innerHTML = '<a href = "https://www.gamers.co.jp/">ゲーマーズ</a>';
-        document.body.appendChild(h1);
+        // const h1 = document.createElement("h1");
+        // h1.textContent = "ゲーマーズ";
+        // h1.innerHTML = '<a href = "https://www.gamers.co.jp/">ゲーマーズ</a>';
+        // document.body.appendChild(h1);
+
+        // const btn = document.getElementById("btn");
+        // btn.addEventListener("click",() => {
+        //     console.log("クリックされました！");
+        // })
+
+        // document.forms.myForm;
+        // btn.addEventListener('click', () => {
+        // const text = document.forms.myForm.mytext.value;
+        // });
+
+        // btn.addEventListener("click",() => {
+        //     const form = document.forms.myForm;
+        //     console.log(form.sample.value);
+        // })
+
+        btn.addEventListener('click', () => {
+        const form = document.forms.myForm;
+        form.test.forEach(item => {
+            if(item.checked) console.log(item.value);
+            })
+        });
+
     </script>
 </body>
 </html>
