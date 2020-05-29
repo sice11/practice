@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>二問目</title>
+</head>
+<body>
+    <div id = "text">
+        この下に入る
+    </div>
+    
+    <button onclick="addElement()">ボタン</button>
+
+    <script>
+        function addElement(){
+            // 値をとるときは、idでとる
+            let div = document.querySelector("div");
+            let h1 = document.createElement("h1");
+            h1.textContent = "Hellow World";
+            div.appendChild(h1);
+        }
+    </script>
+</body>
+</html>

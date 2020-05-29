@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="sample"></div>
+  <button onclick="lesson()">クリック</button><br>
+  <button onclick="lesson2()">2つ目クリック</button>
+  <script>
+
+    // しっかりとしたお硬い書き方です。
+    function lesson(){
+      var lesson = document.getElementById('sample');
+      // 子要素がなかった場合は新しく要素を追加します。
+      if(!lesson.hasChildNodes()){
+        var c_h1   = document.createElement("h1");
+        var c_text = document.createTextNode("Hello World");
+        c_h1.appendChild(c_text);
+        lesson.appendChild(c_h1);
+      }
+    }
+
+    // 2つ目です。 17行目の様な子要素どうこう処理なしバージョンです。
+    function lesson2(){
+      var div = document.querySelector('div');
+      var h1 = document.createElement('h1');
+      h1.textContent = 'Hello World';
+      div.appendChild(h1);
+    }
+  </script>
+</body>
+</html>
