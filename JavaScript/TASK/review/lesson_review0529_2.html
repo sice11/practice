@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5/29課題の2問目</title>
+</head>
+<body>
+    <div id = "sample"></div>
+    <button id = "btn">追加</button>
+
+    <script>
+        let btn = "button";
+        document.getElementById("btn").onclick = function(){
+            let sample_h1 = document.createElement("h1");
+            sample_h1.innerHTML = "Hellow World";
+            sample.appendChild(sample_h1);
+        };
+    </script>
+</body>
+</html>
