@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11章の自問自答</title>
+</head>
+<body>
+    一問目<br>
+    非同期処理の作成（非同期処理が複数ある場合）<br>
+    一番目に「はじめ」<br>
+    二番目に「中間」<br>
+    三番目に「終わり」<br>
+    とconsole.logに出力<br>
+    <script>
+        // 1問目
+
+        // はじめ
+        let myFirst = () => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    console.log("はじめ");
+                    resolve();
+                },2000)
+            })
+        }
+
+        // 中間
+        let mySecond = () => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    console.log("中間");
+                    resolve();
+                },1000)
+            })
+        }
+
+        //終わり
+        let myFinal = () => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    console.log("終わり");
+                    resolve();
+                },500)
+            })
+        }
+
+        //関数を順番に実行させる
+        let promise = new Promise(resolve => resolve())
+        promise
+        .then(myFirst)
+        .then(mySecond)
+        .then(myFinal)
+    </script>
+</body>
+</html>
