@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11章の課題</title>
+</head>
+<body>
+    <div></div>
+    <button id = "btn">ボタン</button>
+    <script>
+        let btn = button;
+        let url = "https://api.github.com/search/repositories?q=tetris+language:javascript";
+
+        document.getElementById("btn").onclick = function(){
+            
+        }
+        fetch(url)
+        .then(data => data.json())
+        .then(json => console.log(json))
+        
+    </script>
+</body>
+</html>
