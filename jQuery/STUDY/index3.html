@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>ドットインストール3章</title>
+    <title>ドットインストール3,4章</title>
 </head>
 <body>
     <p>jQueryの練習</p>
@@ -26,9 +26,16 @@
 
     <script>
         $(function(){
+            //直下の要素だけ指定したい場合
+            // $("#main > .item").css("color","red");
+
+            //それ以下の要素を選択する場合
+            // $("#main  .item").css("color","red");
+
             // 複数の要素を選択している場合
             // $("p, .item").css("color","blue");
 
+            //隣接する要素　ここではitem要素の隣のitem要素という意
             $(".item + .item").css("color","blue");
 
         });
