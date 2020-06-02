@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>jQueryの#1,#2の復習</title>
+</head>
+<body>
+    <a href = "https://techacademy.jp/magazine/9459">
+        jQueryで要素を選択するセレクタの使い方【初心者向け】
+    </a>
+
+    <h2>これの色を青色に変える</h2>
+
+    <div id = "y">idのバージョン</div>
+    <script>
+        $(function(){
+            $("h2").css("color","blue").hide("slow");
+        });
+
+        //idのバージョン
+        $(function(){
+            $("#y").css("color","yellow").hide("solw");
+        });
+
+    </script>
+</body>
+</html>
