@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>ドットインストール#7 属性セレクタ編</title>
+</head>
+<body>
+    <p>jQueryの練習</p>
+    <p><a href = "https://www.yodobashi.com/">ヨドバシ</a></p>
+    <p><a href = "https://a.sofmap.com/">ソフマップ</a></p>
+    <p><a href = "https://www.amiami.jp/">あみあみ</a></p>
+    <script>
+        $(function(){
+            //属性セレクタは []で指定する
+            //また、注意点として、''で区切るものと、""で区切るものとがある
+
+            // = の場合
+            // $('a[href = "https://www.yodobashi.com/"]').css("background","blue");
+
+            //!= イコールではない場合
+            // $('a[href != "https://www.yodobashi.com/"]').css("background","blue");
+
+            //*= この文言を含む場合
+            // $('a[href *= "o"]').css("background","blue");
+
+            //$= この文言で終わる場合
+            $('a[href $= "/"]').css("background","red");
+
+        });
+    </script>
+</body>
+</html>
