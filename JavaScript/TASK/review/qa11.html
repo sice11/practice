@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11章　非同期処理の復習</title>
+</head>
+<body>
+    ボタンを押したら、<br>
+    非同期処理を3種類行う<br>
+    promiseを活用<br>
+
+    <button id = "btn">ボタン</button>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",() => {
+            //一番目の関数定義
+            let myFunc1 = () => {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        console.log("一番目");
+                        resolve();
+                    },2000)
+                })
+            }
+
+            //二番目の関数定義
+            let myFunc2 = () => {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        console.log("二番目");
+                        resolve();
+                    },1500)
+                })
+            }
+
+            //三番目の関数定義
+            let myFunc3 = () => {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        console.log("三番目");
+                        resolve();
+                    },1000)
+                })
+            }
+
+            //上記三種類の関数を順番通りに実行
+            let promise = new Promise(resolve => resolve())
+            promise
+            .then(myFunc1)
+            .then(myFunc2)
+            .then(myFunc3)
+        });
+    </script>
+</body>
+</html>
