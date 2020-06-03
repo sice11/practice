@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#1~7までの復習</title>
+</head>
+<body>
+    <div id = "game">
+        <p class = "sony">PS4</p>
+        <p class = "sony">PS3</p>
+        <p class = "sony">PS2</p>
+        <p class = "sony">PS1</p>
+        <p class = "nintendo">switch</p>
+        <p class = "nintendo">
+            gameboy
+            <li class = "gameboy">gemeboyCOLOR</li>
+            <li class = "gameboy">gemeboyADVANCE</li>
+        </p>
+    </div>
+
+    <script>
+        //id = game をすべて適応
+        // $(function(){
+        //     $("#game").css("background","orange");
+        // });
+
+        //class = "sony","nintendo"それぞれ適応
+        $(function(){
+            $(".sony").css("background","orange");
+        });
+        $(function(){
+            $(".nintendo").css("background","yellow");
+        });
+
+    </script>
+</body>
+</html>
