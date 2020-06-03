@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#10 タグの中身の操作</title>
+</head>
+<body>
+    <p>jQueryの学習</p>
+    <a href = "https://www.sejuku.net/blog/45297">valについての参考記事</a>
+    <input type = "text" value = "Hello">
+    <h1>値を取得したい場合は、メソッドの( )の中身を空白にしておく</h1>
+
+    <script>
+        //p要素の中身を変更
+        // $(function(){
+        //     $("p").text("ゲーマー");
+        // });
+
+        //p要素の値の取得
+        // $(function(){
+        //     alert($("p").text());
+        // });
+
+        //html要素の変更
+        // $(function(){
+        //     $("p").html("<h1>ヨドバシ</h1>");
+        // });
+
+        //htmlにあるvalueの値について val
+        //値の取得
+        // $(function(){
+        //     alert($("input").val());
+        // });
+
+        //val 値の変更
+        // $(function(){
+        //     $("input").val("Good Morning");
+        // });
+
+        //p要素の値のみなくしたい場合
+        // $(function(){
+        //     $("p").empty();
+        // });
+
+        //p要素自体をなくす
+        $(function(){
+            $("p").remove();
+        });
+    </script>
+</body>
+</html>
