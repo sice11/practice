@@ -13,11 +13,12 @@
         <p class = "sony">PS2</p>
         <p class = "sony">PS1</p>
         <p class = "nintendo">switch</p>
-        <p class = "nintendo">
+        <div class = "nintendo">
             gameboy
             <li class = "gameboy">gemeboyCOLOR</li>
             <li class = "gameboy">gemeboyADVANCE</li>
-        </p>
+            <li class = "gameboy">gemeboy</li>
+        </div>
     </div>
 
     <script>
@@ -27,13 +28,25 @@
         // });
 
         //class = "sony","nintendo"それぞれ適応
-        $(function(){
-            $(".sony").css("background","orange");
-        });
-        $(function(){
-            $(".nintendo").css("background","yellow");
-        });
+        // $(function(){
+        //     $(".sony").css("background","orange");
+        // });
+        // $(function(){
+        //     $(".nintendo").css("background","yellow");
+        // });
 
+        //gemeboyCOLORとgemeboyADVANCEのみ、別適応(2通り)
+        // $(function(){
+        //     $(".gameboy").css("background","green");
+        // });
+        // $(function(){
+        //     $(".nintendo").children().css("background","red");
+        // });
+
+        //next()を活用
+        $(function(){
+            $(".nintendo > li:eq(1)").next().css("background","orange");
+        });
     </script>
 </body>
 </html>
