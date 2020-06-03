@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>6/3分の予習の復習</title>
+</head>
+<body>
+    <li><a href = "https://www.yodobashi.com/">ヨドバシ</a></li>
+    <li><a href = "https://a.sofmap.com/">ソフマップアキバ</a></li>
+    <li><a href = "https://www.amiami.jp/">あみあみ</a></li>
+    <li><a href = "www.amiami.jp/">あみあみ２</a></li>
+
+    <h1>タイトル</h1>
+    <p>p要素</p>
+
+    <style>
+        .changeColor {
+            color : red;
+        }
+    </style>
+
+
+
+    <script>
+        //ヨドバシのurlだけ適応
+        // $(function(){
+        //     $('a[href = "https://www.yodobashi.com/"]').css("background","red");
+        // });
+
+        //ヨドバシではないものを適応
+        // $(function(){
+        //     $('a[href != "https://www.yodobashi.com/"]').css("background","red");
+        // });
+
+        //^= は属性値から始まるものを適応
+        // $(function(){
+        //     $('a[href ^= "https"]').css("background","red");
+        // });
+        
+        //*= は属性値を含むものを適応
+        // $(function(){
+        //     $('a[href *= "amiami"]').css("background","red");
+        // });
+
+        //$= は属性値で終わるものを適応
+        // $(function(){
+        //     $('a[href $= "com/"]').css("background","red");
+        // });
+
+        //cssの値を取得
+        // $(function(){
+        //     alert($("a").css("color"));
+        // });
+
+        //addClassの実施
+        $(function(){
+            $("h1 , p").addClass("changeColor");
+        });
+
+        //removeClassの実施
+        $(function(){
+            $("h1").removeClass("changeColor");
+        });
+
+    </script>
+    
+</body>
+</html>
