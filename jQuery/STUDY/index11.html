@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#11 要素の追加</title>
+</head>
+<body>
+    <div id = add>
+        <h1>
+            今回のメソッド内容は<br>
+            before after -> insertBefore insertafter<br>
+            prepend append -> prependTo appendTo<br>
+        </h1>
+    </div>
+    <ul>
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <script>
+        $(function(){
+            //まずは追加する要素を作成（ここは共通）
+            let li = $("<li>").text("ここに追加");
+
+            //after before
+            // $("ul > li:eq(1)").after(li);
+            //同上の動作
+            // li.insertAfter($("ul > li:eq(1)"));
+            
+            //要素の先端に追加
+            // $("li").prepend(li);
+
+            //要素の最後に追加 -> ここではul要素（親要素）の最後に、
+            //li要素として追加するという意
+            // $("ul").append(li);
+            //同上の動作
+            // li.prependTo($("ul"));
+            li.appendTo($("li"));
+        });
+    </script>
+    
+</body>
+</html>
