@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#8 css,addClass/removeClass</title>
+</head>
+<body>
+    <style>
+        .myStyle {
+            border:5px solid green;
+        }
+    </style>
+    <p>jQueryの学習</p>
+    <script>
+        
+        $(function(){
+            $("p").addClass("myStyle");
+        });
+
+        //css設定の取得
+        $(function(){
+            console.log(
+                $("p").css("color")
+            );
+        });
+    </script>
+
+</body>
+</html>
