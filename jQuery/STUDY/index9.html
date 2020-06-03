@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#9 attr/data</title>
+</head>
+<body>
+    <p>jQueryの練習</p>
+
+    <a href = "https://www.yodobashi.com/" data-sitename = "yodobashi">ヨドバシ</a>
+
+    <script>
+        //htmlの属性の値を取得・変更する→attr
+        //「アトリビュートメソッド」と読む
+
+        //hrefの値を取得
+        // $(function(){
+        //     alert($("a").attr("href"));
+        // });
+
+        //hrefの設定
+        // $(function(){
+        //     $("a").attr("href","https://a.sofmap.com/");
+        // });
+
+        //dataのカスタム属性をつけたい場合（アプリケーション開発などにあるそう）
+        $(function(){
+            alert($("a").data("sitename"));
+        });
+    </script>
+</body>
+</html>
