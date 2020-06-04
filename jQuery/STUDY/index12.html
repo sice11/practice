@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#12 エフェクト</title>
+</head>
+<body>
+    <div id = "box" style = "width:100px; height:100px; background:red;"></div>
+    
+    <script>
+        $(function(){
+            //toggleは消えているなら表示し、表示しているなら消す動作
+            $("#box").toggle(800);
+            $("#box").toggle(800);
+            $("#box").toggle(800);
+            //引数に関数を持ってくることもできる
+            $("#box").toggle(800,function(){
+                alert("おしまい");
+            });
+
+        });
+
+        // その他、
+        // hide show 
+        // fadeOut fadeIn
+        // などがある
+    </script>
+</body>
+</html>
