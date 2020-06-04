@@ -9,17 +9,20 @@
 <body>
     <input type = "text" id = "name">
     <select id = "shop" name = "shopName">
-        <option>ヨドバシ</option>
-        <option>ソフマップ</option>
-        <option>ビックカメラ</option>
+        <option value = "yodobashi">ヨドバシ</option>
+        <option value = "sofmap">ソフマップ</option>
+        <option value = "bigcamera">ビックカメラ</option>
     </select>
 
     <select id = "group" name = "groupName">
-        <option>ヨドバシグループ</option>
-        <option>ビックカメラグループ</option>
+        <option value = "yodobashiGP">ヨドバシグループ</option>
+        <option value = "bigcameraGP">ビックカメラグループ</option>
     </select>
 
     <script>
+        let shop = document.getElementById("shop");
+        let group = document.getElementById("group");
+
         $(function(){
             $("#name")
                 .focus(function(){
@@ -31,8 +34,10 @@
                 });
                 
             $("#group").change(function(){
-                if(("#shop").value != "ヨドバシ"){
-                    (this).value = "ビックカメラグループ"
+                if($("#shop").val() != "yodobashi"){
+                    $("#group").val("bigcameraGP")
+                }else{
+                    $("#group").val("yodobashiGP")
                 }
             });
 
