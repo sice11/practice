@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>#14 focus blur changeメソッド</title>
+</head>
+<body>
+    <input type = "text" id = "name">
+    <select id = "shop" name = "shopName">
+        <option>ヨドバシ</option>
+        <option>ソフマップ</option>
+        <option>ビックカメラ</option>
+    </select>
+
+    <select id = "group" name = "groupName">
+        <option>ヨドバシグループ</option>
+        <option>ビックカメラグループ</option>
+    </select>
+
+    <script>
+        $(function(){
+            $("#name")
+                .focus(function(){
+                    $(this).css("background","yellow");
+                })
+
+                .blur(function(){
+                    $(this).css("background","white");
+                });
+                
+            $("#group").change(function(){
+                if(("#shop").value != "ヨドバシ"){
+                    (this).value = "ビックカメラグループ"
+                }
+            });
+
+        });
+    </script>
+    
+</body>
+</html>
