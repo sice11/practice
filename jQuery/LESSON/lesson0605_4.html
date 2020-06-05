@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <select name = "language">
+        <option value = "java">java</option>
+        <option value = "ruby">ruby</option>
+        <option value = "Python">Python</option>
+    </select>
+    <!-- <br>
+    <button>決定</button> -->
+
+    <script>
+        // $(function(){
+        //     $("button").click(function(){
+        //         alert($("select").val() + "語に変換されました。");
+        //     });
+        // });
+
+        $(function(){
+            $("select").change(function(){
+                let lang = $("option:selected").text();
+                alert(lang + "言語に変更されました");
+            });
+        });
+    </script>
+</body>
+</html>

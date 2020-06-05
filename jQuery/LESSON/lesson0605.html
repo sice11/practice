@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>6/5のレッスン</title>
+</head>
+<body>
+    <!-- <button id = "btn">ボタン</button> -->
+
+    <button id = "btn1" value="1">ボタン1</button><br>
+    <button id = "btn2" value="2">ボタン2</button>
+    <div></div>
+
+    <script>
+        // $(function(){
+        //     $("#btn").click(function(){
+        //         alert("Hellow World");
+        //     });
+        // });
+
+        $(function(){
+            //ボタン1の処理
+            $("#btn1").click(function(){
+                let p = $("<p>").text($(this).val() + "がクリックされました。");
+                $("div").after(p);
+            });
+
+            //ボタン2の処理
+            $("#btn2").click(function(){
+                let p = $("<p>").text($(this).val() + "がクリックされました。");
+                $("div").after(p);
+            });
+
+        });
+    </script>
+</body>
+</html>
