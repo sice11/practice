@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>6/5の復習#2</title>
+</head>
+<body>
+    <input type = "button" id = "btn1" value = "1">
+    <div id = "divID"></div>
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                let p = $("<h2>").text($(this).val() + "ボタンをクリックしました。");
+                $("#divID").after(p);
+            });
+            });
+    </script>
+</body>
+</html>
