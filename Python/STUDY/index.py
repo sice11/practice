@@ -21,6 +21,16 @@
 #     print(a * b)
 # func(12,16)
 
-def calc(a,b):
-    print(a * b)
-calc(12,16)
+# def calc(a,b):
+#     print(a * b)
+# calc(12,16)
+
+#4
+class Person:
+    def __init__(self,name,nationality,age):
+        self.name = name
+        self.nationality = nationality
+        self.age = age
+
+Sice = Person("sice","japan",27)
+print(Sice.age)
