@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type = button id = "btn1" value = "1">
+    <div id = "click1">ここから下に追加</div>
+
+    <script>
+        $(function(){
+            $("#btn1").click(function(){
+                let h = $("<h2>").text($(this).val() + "がクリックされました。");
+                $("#click1").after(h);
+            });
+        });
+    </script>
+</body>
+</html>
