@@ -21,3 +21,14 @@ yamada = Person("yamada",52,"hokkaido")
 
 yamada.greeting("nakano")
 
+# 継承
+class Saiya(Person):
+    def __init__ (self,name,age,address,strength):
+        super().__init__(name,age,address)
+        self.strength = strength
+Goku = Saiya("Goku",25,"vegeta",25000)
+print(Goku.name)
+print(Goku.strength)
+
+# 継承するときのsuperの書き方
+# super().親クラスのメソッド
