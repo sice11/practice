@@ -14,6 +14,17 @@
 #     print(num2)
 
 # リストから、順番に取り出すとき
-names = ["yamada","tanaka","miura","kitou"]
-for name in names:
-    print("Mr." + name)
+# names = ["yamada","tanaka","miura","kitou"]
+# for name in names:
+#     print("Mr." + name)
+
+# zip関数
+first_names = ["Alisa","Morishima"]
+midle_names = ["Ilinichina","Lovely"]
+last_names = ["Amiella","Haruka"]
+# for first_name,midle_name,last_name in zip (first_names,midle_names,last_names):
+#     print(first_name + "・" + midle_name + "・" + last_name)
+
+# enumerate関数 要素番号と要素の値を取り出す。
+for banngou,last_name in enumerate (last_names):
+    print("出席番号" , banngou , "番目の" , last_name , "さん")
