@@ -10,5 +10,10 @@
 #     else:
 #         print(num)
 
-for num2 in range(1,31,2):
-    print(num2)
+# for num2 in range(1,31,2):
+#     print(num2)
+
+# リストから、順番に取り出すとき
+names = ["yamada","tanaka","miura","kitou"]
+for name in names:
+    print("Mr." + name)
