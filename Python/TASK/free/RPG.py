@@ -8,7 +8,7 @@ print("戦闘開始")
 
 # 先行を主人公とする
 # 以下から、戦闘を開始。どちらかのhpの値が0になるまで実行
-while (hiro_hp > 0 or enemy_hp > 0):
+while (hiro_hp > 0 and enemy_hp > 0):
 
     # 属性の設定
     attribute = ["火","水","雷"]
