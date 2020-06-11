@@ -1,8 +1,8 @@
 import random
 
 # 主人公と敵の体力を入力
-hiro_hp = 120
-enemy_hp = 150
+hiro_hp = 120.0
+enemy_hp = 150.0
 
 print("戦闘開始")
 
@@ -23,17 +23,29 @@ while (hiro_hp > 0 and enemy_hp > 0):
     attack_hiro = random.randint(20,40)
     attack_enemy = random.randint(10,15)
 
-    # # hiroの攻撃値が0.5倍になるケースをまとめる
-    # if (attributeH == "火" and attributeE == "水") or (attributeH == "水" and attributeE == "雷") or (attributeH == "雷" and attributeE == "火"):
-    #     (attack_hiro == attack_hiro * 0.5) and (attack_enemy == attack_enemy * 1.5)
-    # #hiroの攻撃値が1.5倍になるケースをまとめる
-    # elif (attributeH == "水" and attributeE == "火") or (attributeH == "雷" and attributeE == "水") or (attributeH == "火" and attributeE == "雷"):
-    #     (attack_hiro == attack_hiro * 1.5) and (attack_enemy == attack_enemy * 0.5)
-    # # 等倍分
-    # else:
-    #     (attack_hiro == attack_hiro * 1.0) and (attack_enemy == attack_enemy * 1.0)
+    # 主人公と敵の属性による倍率変動を変数に
+    # 倍率が半減する場合
+    attack_hiro_05 = attack_hiro * 0.5
+    attack_enemy_05 = attack_enemy * 0.5
+    # 倍率が1.5倍になる場合
+    attack_hiro_15 = attack_hiro * 1.5
+    attack_enemy_15 = attack_enemy * 1.5
+    # 倍率が等倍の場合
+    attack_hiro_1 = attack_hiro * 1.0
+    attack_enemy_1 = attack_enemy * 1.0
+
+    # hiroの攻撃値が0.5倍になるケースをまとめる
+    if (attributeH == "火" and attributeE == "水") or (attributeH == "水" and attributeE == "雷") or (attributeH == "雷" and attributeE == "火"):
+        (attack_hiro_05) and (attack_enemy_15)
+    #hiroの攻撃値が1.5倍になるケースをまとめる
+    elif (attributeH == "水" and attributeE == "火") or (attributeH == "雷" and attributeE == "水") or (attributeH == "火" and attributeE == "雷"):
+        (attack_hiro_15) and (attack_enemy_05)
+    # 等倍分
+    else:
+        (attack_hiro_1) and (attack_enemy_1)
     
 
+    #以下に表示される攻撃値は、属性値を反映しない値
     # 主人公を先行
     enemy_hp -= attack_hiro
     print("hiroが",attributeH,"属性で",attack_hiro,"の攻撃")
