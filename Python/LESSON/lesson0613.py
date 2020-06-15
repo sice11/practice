@@ -41,7 +41,8 @@ class lesson:
     def lesson_func():
         for l in lesson.list1:
             if l == 3 or l == 5:
-                print("{}だよ".format(str(l)))
+                print("{}だよ".format(l))
+                # print("{}だよ".format(str(l)))
             else:
                 print(l)
 lesson.lesson_func()
