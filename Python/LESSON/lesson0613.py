@@ -1,6 +1,6 @@
 # print("Hellow World")
 
-list = [1,2,3,4,5,6,7,8,9,10]
+# list = [1,2,3,4,5,6,7,8,9,10]
 # num = 0
 # while num < 10 :
 #     if list[num] == 3:
@@ -36,17 +36,31 @@ list = [1,2,3,4,5,6,7,8,9,10]
 #             print(l)
 # lesson()
 
+# class lesson:
+#     list1 = [1,2,3,4,5,6,7,8,9,10]
+#     def lesson_func():
+#         for l in lesson.list1:
+#             if l == 3 or l == 5:
+#                 print("{}だよ".format(l))
+#                 # print("{}だよ".format(str(l)))
+#             else:
+#                 print(l)
+# lesson.lesson_func()
+
+
+# 条件文・繰り返し文はクラスの中の関数に入れる。
+# 変数や配列はクラスやメソッドの中に入れる。
+
 class lesson:
     list1 = [1,2,3,4,5,6,7,8,9,10]
-    def lesson_func():
+    
+    def lesson_func(self):
         for l in lesson.list1:
             if l == 3 or l == 5:
                 print("{}だよ".format(l))
                 # print("{}だよ".format(str(l)))
             else:
                 print(l)
-lesson.lesson_func()
 
-
-# 条件文・繰り返し文はクラスの中の関数に入れる。
-# 変数や配列はクラスやメソッドの中に入れる。
+li = lesson()
+li.lesson_func()
