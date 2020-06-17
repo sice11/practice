@@ -3,11 +3,11 @@ import json
 import csv
 import pprint
 
-url = ""
+url = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
 
 # リクエストパラメータの設定（辞書型で）
 params = {}
-params["keyid"] = "64270ef5e2cf61749e8c579c2f6c4084"
+params["keyid"] = ""
 params["freeword"] = "大阪駅,魚"
 
 # urlにparamsで設定した情報を投げる その情報をresponse変数に格納
