@@ -26,6 +26,7 @@ while (hiro_hp > 0 and enemy_hp > 0):
         # 同属性の場合
         Hpoint_1 = attack * 1.0
         # 主人公の属性値反映後の実際の攻撃値
+        @staticmethod
         def hiroAT():
             # hiroの攻撃値が0.5倍になるケースをまとめる
             if (hiro.attribute == "火" and enemy.attribute == "水") or (hiro.attribute == "水" and enemy.attribute == "雷") or (hiro.attribute == "雷" and enemy.attribute == "火"):
@@ -51,6 +52,7 @@ while (hiro_hp > 0 and enemy_hp > 0):
         Epoint_15 = attack * 1.5
         # 同属性の場合
         Epoint_1 = attack * 1.0
+        @staticmethod
         def enemyAT():
             # hiroの攻撃値が0.5倍になるケースをまとめる
             if (hiro.attribute == "火" and enemy.attribute == "水") or (hiro.attribute == "水" and enemy.attribute == "雷") or (hiro.attribute == "雷" and enemy.attribute == "火"):
