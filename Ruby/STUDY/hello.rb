@@ -42,14 +42,14 @@
 # a = 42
 # puts num
 
-# class name_func
-#     def talk
-#         puts "Hellow"
-#     end
-# end
+class Name_func
+    def talk
+        puts "Hello"
+    end
+end
 
-# hello = name_func.new
-# hello.talk
+hello = Name_func.new
+hello.talk
 
 # puts "Hello " + "World"
 
@@ -77,21 +77,21 @@
 
 # puts profile[:age]
 
-class Hoge
-    def hello
-        puts "Hello Ruby"
-    end
-end
+# class Hoge
+#     def hello
+#         puts "Hello Ruby"
+#     end
+# end
 
-hello_puts = Hoge.new
-hello_puts.hello
+# hello_puts = Hoge.new
+# hello_puts.hello
 
-class Hoge2 < Hoge
-    def hello2
-        puts "Hello World"
-    end
-end
+# class Hoge2 < Hoge
+#     def hello2
+#         puts "Hello World"
+#     end
+# end
 
-hello2_puts = Hoge2.new
-hello2_puts.hello
-hello2_puts.hello2
+# hello2_puts = Hoge2.new
+# hello2_puts.hello
+# hello2_puts.hello2
