@@ -60,11 +60,17 @@
 #     puts word
 # end
 
-for num in 1..30
-    case num % 5
-        when 0
-            puts "5の倍数"
-        else
-            puts num
-    end
-end
+# for num in 1..30
+#     case num % 5
+#         when 0
+#             puts "5の倍数"
+#         else
+#             puts num
+#     end
+# end
+
+# 9章 whileを使った繰り返し
+# num = 0
+# while (num != 42)
+#     num = gets.chomp!.to_i
+# end
