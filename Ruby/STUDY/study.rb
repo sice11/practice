@@ -44,13 +44,27 @@
 # num
 
 # 7章 caseを使った条件分岐
-def num
-    40.upto(50){|i|
-    case i
-        when 42
-            puts "42です。"
+# def num
+#     40.upto(50){|i|
+#     case i
+#         when 42
+#             puts "42です。"
+#         else
+#             puts "それ以外です。"
+#     end}
+# end
+# num
+
+# 8章 forを使った繰り返し
+# for word in "a".."p"
+#     puts word
+# end
+
+for num in 1..30
+    case num % 5
+        when 0
+            puts "5の倍数"
         else
-            puts "それ以外です。"
-    end}
+            puts num
+    end
 end
-num
