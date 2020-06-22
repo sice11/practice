@@ -32,13 +32,25 @@
 # puts d
 
 # 6章 ifを使った条件分岐
+# def num
+#     40.upto(50){|i|
+#     if i == 42
+#         puts "Answer to the Ultimate Question of Life, the Universe, and Everything"
+#     else
+#         puts i
+#     end
+#     }
+# end
+# num
+
+# 7章 caseを使った条件分岐
 def num
     40.upto(50){|i|
-    if i == 42
-        puts "Answer to the Ultimate Question of Life, the Universe, and Everything"
-    else
-        puts i
-    end
-    }
+    case i
+        when 42
+            puts "42です。"
+        else
+            puts "それ以外です。"
+    end}
 end
 num
