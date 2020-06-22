@@ -26,7 +26,19 @@
 # # puts data2.length
 # puts data2[0,3]
 
-data = Array.new(10,["hoge","fuge"])
-# puts data
-d = data.uniq
-puts d
+# data = Array.new(10,["hoge","fuge"])
+# # puts data
+# d = data.uniq
+# puts d
+
+# 6章 ifを使った条件分岐
+def num
+    40.upto(50){|i|
+    if i == 42
+        puts "Answer to the Ultimate Question of Life, the Universe, and Everything"
+    else
+        puts i
+    end
+    }
+end
+num
