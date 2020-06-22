@@ -16,12 +16,17 @@
 # puts data[-1]
 # ②いつも通り、[ ]を活用
 # また、配列の大きさを指定することもできる。
-data2 = Array.new(3)
-data2 = [
-    "toto",
-    "ka-ten",
-    "sakana",
-    "usi"
-]
-# puts data2.length
-puts data2[0,3]
+# data2 = Array.new(3)
+# data2 = [
+#     "toto",
+#     "ka-ten",
+#     "sakana",
+#     "usi"
+# ]
+# # puts data2.length
+# puts data2[0,3]
+
+data = Array.new(10,["hoge","fuge"])
+# puts data
+d = data.uniq
+puts d
