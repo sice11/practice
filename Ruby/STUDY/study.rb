@@ -74,3 +74,8 @@
 # while (num != 42)
 #     num = gets.chomp!.to_i
 # end
+
+# 10章 eachを使った繰り返し
+# (1..10).each do |i|
+#     puts i * 3
+# end
