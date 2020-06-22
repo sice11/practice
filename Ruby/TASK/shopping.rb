@@ -10,13 +10,18 @@ def check
         when 2
             puts "通常給与月ですね。"
         else
-            puts "数字の1または2を入力してください"
-            while (input != 1 || input != 2)
+            input_flag = true
+            while (input_flag)
                 case input
                     when 1
                         puts "ボーナス月ですね。"
+                        input_flag = false
                     when 2
                         puts "通常給与月ですね。"
+                        input_flag = false
+                    else
+                        puts "数字の1または2を入力してください"
+                        input = gets.chomp.to_i
                 end
             end
     end
