@@ -3,7 +3,7 @@ def list
     want_list = Hash.new()
     while(inputs_flag2)
         puts "買いたいものの名前を入力。終わる場合はendを入力。"
-        input_name = gets
+        input_name = gets.chomp
         if input_name != "end"
             puts "その値段を入力してください。"
             input_value = gets.chomp.to_i
