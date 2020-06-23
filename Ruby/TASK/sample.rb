@@ -7,8 +7,7 @@ def list
         if input_name != "end"
             puts "その値段を入力してください。"
             input_value = gets.chomp.to_i
-            want_list[:name] = input_name
-            want_list[:value] = input_value
+            want_list[input_name] = input_value
         else
             puts "入力を終了します。"
             inputs_flag2 = false
