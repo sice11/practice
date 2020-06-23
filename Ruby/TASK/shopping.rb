@@ -26,13 +26,20 @@ budget
 
 # 買いたいもののリスト
 def list
+    inputs_flag2 = true
     want_list = Hash.new()
-    puts "買いたいものの名前を入力してください。"
-    input_name = gets
-    puts "その値段を入力してください。"
-    input_value = gets.chomp.to_i
-    # want_listにキー（名前）と値（値段）を入力する。
-    want_list[:name] = input_name
-    want_list[:value] = input_value
+    while(inputs_flag2)
+        puts "買いたいものの名前を入力。終わる場合はendを入力。"
+        input_name = gets.chomp
+        if input_name != "end"
+            puts "その値段を入力してください。"
+            input_value = gets.chomp.to_i
+            want_list[input_name] = input_value
+        else
+            puts "入力を終了します。"
+            inputs_flag2 = false
+        end
+    end
+    puts want_list
 end
 list
