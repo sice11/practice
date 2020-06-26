@@ -7,7 +7,7 @@ class Shopping
     def check
         puts "ボーナス月であれば1を、そうでないなら2を押してください。"
         inputs_flag = true
-        while(inputs_flag)
+        while inputs_flag
             input = gets.chomp.to_i
             if input == 1 || input == 2
                 puts input == 1 ? "ボーナス月ですね。" : "通常給与月ですね。"
@@ -23,7 +23,7 @@ class Shopping
         inputs_flag2 = true
         want_list = Array.new
         @input_value = 0
-        while(inputs_flag2)
+        while inputs_flag2
             puts "買いたいものの名前を入力。終わる場合はendを入力。"
             input_name = gets.chomp
             if input_name != "end"
